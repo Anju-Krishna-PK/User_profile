@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-Compatible" content="if-edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class ="container">
+                <nav>
+                    <img src="https://liumaphoto.com/wp-content/uploads/2016/12/logo-transparent-.png" class="logo">
+                    <ul>
+                        <li>
+                            <a class="nav-link " href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#service">Service</a>
+                        </li>
+                        <li>
+                            <a class="nav-link " href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>DataScientist</p>
+                    <h1>
+                        Hi,I'm <span>Anju Krishna P K </span><br>from INDIA                  </h1>
+                </div>
+            </div> 
+        </div>
+        <div >
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                      <img src="image\1 (2).jpg" >  
+                    </div>
+                    <div class="col-2">
+                        <h1 class="sub-title" id="about" >About Me</h1>
+                        <p>
+
+                            As a unique Individual, I bring a fresh perspective and innovative approach to everything I do. My diverse background and experiences have shaped me into a well-rounded individual with a passion for creativity and out-of-the-box thinking.
+                            With a strong focus on personal growth and development, I constantly seek out new challenges and opportunities to expand my horizons. I am not afraid to take risks and am always willing to step outside of my comfort zone in pursuit of excellence.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id='skills' >
+                            <ul>
+                                <li>
+                                    <span>Data Visualization</span><br>Visualize data.
+                                </li>
+                                <li>
+                                    <span>Predictive Modeling</span><br>Bild accurate model.
+                                </li>
+                                <li>
+                                    <span>Data Analysis</span><br> Analysis data.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id='experience'>
+                            <ul>
+                                <li>
+                                    <span>2028-present</span><br>Senior Data DataScientist in London .
+                                </li>
+                                <li>
+                                    <span>2025-2028</span><br>Junior Data DataScientist in London.
+                                </li>
+                                <li>
+                                    <span>2024-2025</span><br>Intern at KL in Banmglore.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id='education'>
+                            <ul>
+                                <li>
+                                    <span>2024</span><br>MCA from A P J Abdhul Kalam Technological university.
+                                </li>
+                                <li>
+                                    <span>2022</span><br> Bachelors in Computer Science from Calicut University.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" id="service">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>
+                    Predictive Modeling<br>
+                </h2>
+                <p>
+
+                    I leverage historical data and statistical techniques to build models that forecast 
+                    future outcomes. This allows businesses to make data-driven decisions,
+                     identify trends, and mitigate risks.
+                </p>
+                <img src="https://datasciencestunt.com/wp-content/uploads/2020/11/pexels-photo-2599244-1536x1024.jpeg">
+            </div><div>
+                <h2 >
+                    Data Analysis<br>
+                </h2>
+                <p>
+
+                    I delve into datasets to uncover hidden patterns, relationships, and insights. This information empowers businesses to understand customer behavior, optimize operations, and improve decision-making.
+                    </p>
+                    <img src="https://thumbs.dreamstime.com/b/finance-data-concept-woman-working-analytics-chart-graph-information-digital-screen-young-88886653.jpg">
+                </div>
+                    <div>
+                <h2>
+                    Data Visualization<br>
+                </h2>
+                <p>
+                    
+                    I transform complex data into compelling and clear visual representations. This allows stakeholders to easily grasp key insights and trends hidden within the data.
+                    </p>
+                    <img src="https://itchronicles.com/wp-content/uploads/2020/10/map-data-to-customer-experience-768x512.jpg">
+            </div></div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+ <div class="container">
+        <h1 class="sub-title">Feel free to contact</h1>
+        <div class="services-list">
+            <nav>
+            <div>
+                <h2><span class="icon fa fa-phone"></span><span class="text"> +91 9446068659</span></h2>
+                <h2><span class="icon fa fa-paper-plane"></span><span class="text"> anjukrishnnapk@gmail.com</span></h2>
+            </div>
+            </nav>
+            </div>
+        </div>
+</div>
+<div class="footer_content">
+    <p class="mb-0" style="font-size: 14px;">Copyright © 2024 All rights reserved</a></p>
+    </div>
+        <script >
+            var tablinks = document.getElementsByClassName("tab-links");  // Plural for getElementsByClassName
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname) {
+              for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+              }
+              for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+
+    </body>
+
+</html>
